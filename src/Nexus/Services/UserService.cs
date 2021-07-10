@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System.Net.Http;
+using System.Threading;
 using System.Threading.Tasks;
 using Nexus.Contracts.Requests;
 using Nexus.Contracts.Responses;

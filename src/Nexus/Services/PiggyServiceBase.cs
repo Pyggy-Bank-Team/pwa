@@ -3,8 +3,10 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using Nexus.Contracts.Responses;
 using Nexus.Contracts.Results;
+using Nexus.Interfaces;
 
 namespace Nexus.Services
 {
@@ -91,7 +93,7 @@ namespace Nexus.Services
             => new StringContent(JsonConvert.SerializeObject(content), Encoding.UTF8, "application/json");
 
         private void AddBearerToken(HttpClient client)
-            => client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _settingsService.GetValue(Constants.AccessToken));
+            => client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _settingsService.GetValue(""));
 
         private async Task<ServiceResult<TResponse>> ReturnServiceResultAsync<TResponse>(HttpResponseMessage httpResponse) where TResponse : class
         {
@@ -107,6 +109,6 @@ namespace Nexus.Services
         
         protected IHttpClientFactory HttpClientFactory { get; }
         protected string BaseUrl { get; } = @"https://dev.piggybank.pro/api";
-        public bool IsAuthorized => _settingsService.HaveValue(Constants.AccessToken);
+        public bool IsAuthorized => _settingsService.HaveValue("");
     }
 }
