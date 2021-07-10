@@ -18,8 +18,11 @@ namespace Nexus.Services
         public Task<ServiceResult<AccessTokenResponse>> RegistrationUser(CreateUserRequest request, CancellationToken token)
             => Post<AccessTokenResponse, CreateUserRequest>("users", request, token);
 
-        public Task<ServiceResult<AccessTokenResponse>> GetAccessToken(GetTokenRequest request, CancellationToken token)
-            => Post<AccessTokenResponse, GetTokenRequest>("tokens/connect", request, token);
+        public ServiceResult<AccessTokenResponse> GetAccessToken(GetTokenRequest request, CancellationToken token)
+        {
+            var temp = Post<AccessTokenResponse, GetTokenRequest>("tokens/connect", request, token).Result;
+            return temp;
+        }
 
         public Task<CurrencyResponse[]> GetAvailableCurrencies(CancellationToken token)
             => Get<CurrencyResponse[]>("currencies", token);

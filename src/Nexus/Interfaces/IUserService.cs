@@ -10,7 +10,7 @@ namespace Nexus.Interfaces
     {
         Task<ServiceResult<AccessTokenResponse>> RegistrationUser(CreateUserRequest request, CancellationToken token);
 
-        Task<ServiceResult<AccessTokenResponse>> GetAccessToken(GetTokenRequest request, CancellationToken token);
+        ServiceResult<AccessTokenResponse> GetAccessToken(GetTokenRequest request, CancellationToken token);
 
         Task<CurrencyResponse[]> GetAvailableCurrencies(CancellationToken token);
 

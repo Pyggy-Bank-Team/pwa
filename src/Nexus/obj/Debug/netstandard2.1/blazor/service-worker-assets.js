@@ -69,7 +69,7 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-qqcp65FIC0Ecy6iyxn9BQC8zvJwlWksJH\/PeZxN5O24=",
+      "hash": "sha256-c5cWzMdU9iOpfdE8TuzYNdlMTl3b73BK5GvqQDuim1U=",
       "url": "_framework\/_bin\/Nexus.dll"
     },
     {
@@ -193,8 +193,12 @@
       "url": "_framework\/_bin\/System.Text.Encodings.Web.dll"
     },
     {
-      "hash": "sha256-Bs1Wrmh4ex9dTEIT0yCRF52N\/wOmsBDt457BHr0\/ssM=",
+      "hash": "sha256-FOkNrRxL9BroxWyRPNVFEiGQPggBBv7oo439W0ZnlXA=",
       "url": "_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+    },
+    {
+      "hash": "sha256-cs8pHUurDt0IqbB8YXPh560au3q3J\/1wRL9jBddRVmE=",
+      "url": "_framework\/_bin\/Newtonsoft.Json.dll"
     },
     {
       "hash": "sha256-bSgsT2x5xMvs8mara5wU+EJwcyHa9GVMU85HwhWcdWM=",
@@ -217,27 +221,39 @@
       "url": "_framework\/_bin\/Microsoft.AspNetCore.Components.dll"
     },
     {
-      "hash": "sha256-6gJMwefpsWLHWsEipZp143xn8k2Ea27upnXqjUT6iNI=",
+      "hash": "sha256-VTqOqlM2Ik5hnXf5Lf1HKc1Ulk71djAgbUAfFXSXxqQ=",
       "url": "_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll"
+    },
+    {
+      "hash": "sha256-k2YTo66L2qtadMuKIoZ+vLg\/JrdHS\/XxGudqfCsORtQ=",
+      "url": "_framework\/_bin\/Microsoft.Extensions.Http.dll"
+    },
+    {
+      "hash": "sha256-293av9Y+tREl\/Q6nLNmiDK6fpTMpFxYsQ7CQmAK6siU=",
+      "url": "_framework\/_bin\/Microsoft.Extensions.Logging.dll"
+    },
+    {
+      "hash": "sha256-12TCHWp7TLAoWPXOicu48Fwo7HFray8UpzNKW67pFxo=",
+      "url": "_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll"
+    },
+    {
+      "hash": "sha256-SkmNG8Tet\/ttcw04JCg4hkHMvQyKUc0gQFACS5gmFuI=",
+      "url": "_framework\/_bin\/Microsoft.Extensions.Options.dll"
+    },
+    {
+      "hash": "sha256-OKirhQZO8VdPKiwv9\/GZhTMSBfthdPjJYYIZYP3nhS4=",
+      "url": "_framework\/_bin\/Microsoft.Extensions.Primitives.dll"
     },
     {
       "hash": "sha256-FJ+rEgcx6ljTxwbRXZSUGfrDKpVvOxHCSfNxbnXNn3M=",
       "url": "_framework\/_bin\/Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
-      "hash": "sha256-oK1Bjv95fH+hSbogUkJE+xDAI203kJG6lL6Sm\/NuPWg=",
-      "url": "_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll"
-    },
-    {
-      "hash": "sha256-y\/FyJQOcW2TOcTp7Iuv8brGBzL5ZP0oJdG7ysK+gtKc=",
-      "url": "_framework\/_bin\/Microsoft.Extensions.Primitives.dll"
-    },
-    {
-      "hash": "sha256-n0Ag7rF7ZQamklPSZkakIXkRoa6JwlmPSS0cRaAhJQM=",
+      "hash": "sha256-pAR4f3N24MSWL5ESiytoc0PgGWqR8s8TlT46CzcNH8M=",
       "url": "_framework\/_bin\/Microsoft.Extensions.Configuration.dll"
     },
     {
-      "hash": "sha256-2jNkt\/\/JGfoqWNB8whRdJotnsanWbH3FfxZWz0gyLTs=",
+      "hash": "sha256-OLQD\/3RMU7yBh34\/zN6t9sfp00ttfOGfjQS9fiVa0Zk=",
       "url": "_framework\/_bin\/Microsoft.Extensions.Configuration.Abstractions.dll"
     },
     {
@@ -261,14 +277,6 @@
       "url": "_framework\/_bin\/Microsoft.Extensions.FileProviders.Abstractions.dll"
     },
     {
-      "hash": "sha256-+kkwUt5LUrFrnFcHiSvLP3Ps50UAimB6C5utgehqOo4=",
-      "url": "_framework\/_bin\/Microsoft.Extensions.Logging.dll"
-    },
-    {
-      "hash": "sha256-rvTW0d54uLW0iDMAX30lpmr9f8uHoS3YYkEU5zNGhyc=",
-      "url": "_framework\/_bin\/Microsoft.Extensions.Options.dll"
-    },
-    {
       "hash": "sha256-LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=",
       "url": "_framework\/_bin\/Microsoft.JSInterop.dll"
     },
@@ -277,7 +285,7 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-ddmQ7yiRmvStSr+diu7kNRzhip8FqwUvyR+u9BNfcWI=",
+      "hash": "sha256-iLDiXkrOQaFzCZ608qTT0CdhZzmnUEgejEiOgaoflQg=",
       "url": "_framework\/_bin\/Nexus.pdb"
     },
     {
@@ -297,9 +305,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-3jCWvkm3yjD9MTRG4rYKJdFwzYLyRnGIE5DLNoBzxKQ=",
+      "hash": "sha256-170v7mcteQOB5A8eaH6RXzlpQqBVdXkdbL5vkn7E4Ks=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "uqeP+xOI"
+  "version": "HsL5AFM8"
 };

@@ -1,4 +1,9 @@
 ﻿@page "/counter"
+@using Nexus.Interfaces
+@using Nexus.Contracts.Requests
+@using System.Threading
+@inject IUserService UserService
+@inject HttpClient HttpClient
 
 <h1>Counter</h1>
 
@@ -6,11 +11,27 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<span>@token</span>
+
 @code {
     private int currentCount = 0;
+    private string token;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var request = new GetTokenRequest
+        {
+            Password = "dTrest22~",
+            UserName = "denis"
+        };
+        var response = UserService.GetAccessToken(request, CancellationToken.None);
+        token = response.IsSuccess ? response.Ok.AccessToken : "oppps";
+    }
 
     private void IncrementCount()
     {
         currentCount++;
+
+
     }
 }

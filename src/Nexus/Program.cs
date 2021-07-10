@@ -3,6 +3,8 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Nexus.Interfaces;
+using Nexus.Services;
 
 namespace Nexus
 {
@@ -13,8 +15,12 @@ namespace Nexus
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("app");
 
-            builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-            builder.Services.AddHttpClient();
+            builder.Services.AddScoped(sp => new HttpClient {BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)});
+
+            builder.Services.AddHttpClient("Post", client =>
+                client.BaseAddress = new Uri("https://dev.piggybank.pro/api"));
+            builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<ISettingsService, DummySettings>();
 
             await builder.Build().RunAsync();
         }

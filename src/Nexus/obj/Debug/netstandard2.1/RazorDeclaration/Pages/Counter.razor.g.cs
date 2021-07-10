@@ -75,6 +75,34 @@ using Nexus.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Repos\pwa\src\Nexus\_Imports.razor"
+using Nexus.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Repos\pwa\src\Nexus\Pages\Counter.razor"
+using Nexus.Interfaces;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Repos\pwa\src\Nexus\Pages\Counter.razor"
+using Nexus.Contracts.Requests;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Repos\pwa\src\Nexus\Pages\Counter.razor"
+using System.Threading;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -84,18 +112,34 @@ using Nexus.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "C:\Repos\pwa\src\Nexus\Pages\Counter.razor"
+#line 16 "C:\Repos\pwa\src\Nexus\Pages\Counter.razor"
        
     private int currentCount = 0;
+    private string token;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var request = new GetTokenRequest
+        {
+            Password = "dTrest22~",
+            UserName = "denis"
+        };
+        var response = UserService.GetAccessToken(request, CancellationToken.None);
+        token = response.IsSuccess ? response.Ok.AccessToken : "oppps";
+    }
 
     private void IncrementCount()
     {
         currentCount++;
+
+
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient HttpClient { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IUserService UserService { get; set; }
     }
 }
 #pragma warning restore 1591
