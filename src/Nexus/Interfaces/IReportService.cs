@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Nexus.Contracts.Requests;
 using Nexus.Contracts.Responses;
+using Nexus.Dto;
 
 namespace Nexus.Interfaces
 {

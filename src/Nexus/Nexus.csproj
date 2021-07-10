@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Dto" />
     <Folder Include="Enums" />
     <Folder Include="Interfaces\" />
     <Folder Include="Contracts\" />
