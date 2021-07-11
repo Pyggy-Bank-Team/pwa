@@ -17,8 +17,7 @@ namespace Nexus
 
             builder.Services.AddScoped(sp => new HttpClient {BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)});
 
-            builder.Services.AddHttpClient("Post", client =>
-                client.BaseAddress = new Uri("https://dev.piggybank.pro/api"));
+            builder.Services.AddHttpClient();
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<ISettingsService, DummySettings>();
 

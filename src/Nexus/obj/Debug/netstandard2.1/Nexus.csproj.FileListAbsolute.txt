@@ -742,8 +742,8 @@ C:\Repos\pwa\src\Nexus\obj\Debug\netstandard2.1\Nexus.dll
 C:\Repos\pwa\src\Nexus\obj\Debug\netstandard2.1\Nexus.pdb
 C:\Repos\pwa\src\Nexus\obj\Debug\netstandard2.1\blazor\serviceworkers\wwwroot\service-worker.js
 C:\Repos\pwa\src\Nexus\obj\Debug\netstandard2.1\blazor\service-worker-assets.js
-C:\Repos\pwa\src\Nexus\obj\Debug\netstandard2.1\integrity\l220taPYatxJ37eebHTB-mtwTo_juYDhgwptNZ1qhak=.hash
-C:\Repos\pwa\src\Nexus\obj\Debug\netstandard2.1\integrity\c5cWzMdU9iOpfdE8TuzYNdlMTl3b73BK5GvqQDuim1U=.hash
-C:\Repos\pwa\src\Nexus\obj\Debug\netstandard2.1\integrity\iLDiXkrOQaFzCZ608qTT0CdhZzmnUEgejEiOgaoflQg=.hash
-C:\Repos\pwa\src\Nexus\obj\Debug\netstandard2.1\integrity\170v7mcteQOB5A8eaH6RXzlpQqBVdXkdbL5vkn7E4Ks=.hash
-C:\Repos\pwa\src\Nexus\obj\Debug\netstandard2.1\integrity\hghjd-Ip7Wua6k_-y0bAaaPFIA-x7YcmMLGhJqRsMIU=.hash
+C:\Repos\pwa\src\Nexus\obj\Debug\netstandard2.1\integrity\1Mr14MOQnIcGDA-1Ae0hpjWfsSpzc6VWOzC0Cv9eMtA=.hash
+C:\Repos\pwa\src\Nexus\obj\Debug\netstandard2.1\integrity\wRoKXPJJfa_q_1bh7S_6GCVNVUCHjaP36p2ZVfKBigc=.hash
+C:\Repos\pwa\src\Nexus\obj\Debug\netstandard2.1\integrity\ZPL2rudPnP6rndptzOhQ9fM0xH7otxTSRRKqDRF4xiI=.hash
+C:\Repos\pwa\src\Nexus\obj\Debug\netstandard2.1\integrity\-YTnDTtVrI1px8OgIWAQy6ckw3HjWP1b1EajWjNwfXE=.hash
+C:\Repos\pwa\src\Nexus\obj\Debug\netstandard2.1\integrity\893l8dGj4Nj5BA3SwaMEqq6PVk_KkZfECvWA0yWASuo=.hash

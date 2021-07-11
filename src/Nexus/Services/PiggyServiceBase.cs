@@ -36,7 +36,6 @@ namespace Nexus.Services
             where TRequest : class
         {
             var client = HttpClientFactory.CreateClient("Post");
-            AddBearerToken(client);
             using (var httpResponse = await client.PostAsync($"{BaseUrl}/{requestUrl}", ToStringContent(request), token))
             {
                 return await ReturnServiceResultAsync<TResponse>(httpResponse);
@@ -108,7 +107,7 @@ namespace Nexus.Services
         }
         
         protected IHttpClientFactory HttpClientFactory { get; }
-        protected string BaseUrl { get; } = @"https://dev.piggybank.pro/api";
+        protected string BaseUrl { get; } = @"https://localhost:5005/api";
         public bool IsAuthorized => _settingsService.HaveValue("");
     }
 }

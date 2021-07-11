@@ -103,6 +103,13 @@ using System.Threading;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Repos\pwa\src\Nexus\Pages\Counter.razor"
+using System.Net.Http.Headers;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -112,7 +119,7 @@ using System.Threading;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 16 "C:\Repos\pwa\src\Nexus\Pages\Counter.razor"
+#line 17 "C:\Repos\pwa\src\Nexus\Pages\Counter.razor"
        
     private int currentCount = 0;
     private string token;
@@ -124,8 +131,22 @@ using System.Threading;
             Password = "dTrest22~",
             UserName = "denis"
         };
-        var response = UserService.GetAccessToken(request, CancellationToken.None);
-        token = response.IsSuccess ? response.Ok.AccessToken : "oppps";
+        //
+        // var response = await HttpClient.GetAsync("https://dev.piggybank.pro/api/Currencies");
+        //
+        // token = response.IsSuccessStatusCode ? await response.Content.ReadAsStringAsync(): "oppps";
+
+        // var response = UserService.GetAccessToken(request, CancellationToken.None);
+        // token = response.IsSuccess ? response.Ok.AccessToken: "oppps";
+
+
+        var response = await HttpClient.PostAsJsonAsync("https://dev.piggybank.pro/api/Tokens/Connect", request);
+        token = response.IsSuccessStatusCode ? await response.Content.ReadAsStringAsync(): "oppps";
+
+        HttpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImJjMGU2NzcyLTI2MWEtNDg3ZS1hZGY4LTliZjQyMjllZWYwZiIsImN1cnJlbmN5IjoiUlVCIiwibmJmIjoxNjI2MDA2NDY1LCJleHAiOjE2MjYwMDY0NjYsImlzcyI6Iklzc3VlciIsImF1ZCI6IkF1ZGllbmNlIn0.jVvlzC8c7iHwAmzFCOURZom0dSlWveLXRyrVFRk8wis");
+
+        response = await HttpClient.GetAsync("https://dev.piggybank.pro/api/Operations");
+        token = response.IsSuccessStatusCode ? await response.Content.ReadAsStringAsync(): "oppps";
     }
 
     private void IncrementCount()
