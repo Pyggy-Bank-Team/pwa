@@ -1,0 +1,10 @@
+Debug
+Release
+*.suo
+*.user
+*.pubxml
+*.rsa
+.vs
+.idea
+obj
+bin
