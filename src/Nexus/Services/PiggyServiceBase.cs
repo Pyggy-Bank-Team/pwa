@@ -107,7 +107,7 @@ namespace Nexus.Services
         }
         
         protected IHttpClientFactory HttpClientFactory { get; }
-        protected string BaseUrl { get; } = @"https://localhost:5005/api";
+        protected string BaseUrl { get; } = @"https://dev.piggybank.pro/api";
         public bool IsAuthorized => _settingsService.HaveValue("");
     }
 }
