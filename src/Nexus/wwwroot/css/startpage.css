@@ -1,0 +1,32 @@
+.grid{
+    display: grid;
+    grid-template-rows: 25% 25% 20% 20% 10%;
+    min-height: 100vh;
+    background-color: darkred;
+}
+
+.grid-row-1{
+    grid-row: 1;
+    background-color: red;
+}
+
+.grid-row-2{
+    grid-row: 2;
+    text-align: center;
+    background-color: pink;
+}
+
+.grid-row-3{
+    grid-row: 3;
+    background-color: deeppink;
+}
+
+.grid-row-4{
+    grid-row: 4;
+    background-color: green;
+}
+
+.grid-row-5{
+    grid-row: 5;
+    background-color: deepskyblue;
+}
